@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: gulimall-third-party
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.109.129:8848 #你的nacos地址
+        namespace:  #第三方third-party命名空间
+        extension-configs[0]:
+          data-id: oss.yaml
+          group: DEFAULT_GROUP
+          refresh: true
